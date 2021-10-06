@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'linux';
+    src: url(../fontes/coolvetica\ rg.ttf);
+    font-weight: normal;
+}
+
+
+
+
+
+:root{
+    --cor1: #D2D8D9;
+    --cor2: #B7C8D5;
+    --cor3: #95B3BF;
+    --cor4: #4D7A8C; 
+    --cor5: #065688;
+    --cor6: #000000;
+
+    --fontepadrao : Arial , Verdana, Helvetica;
+    --fontedestaque : 'Bebas Neue', cursive;
+    --fontelinux : 'linux', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: #D2D8D9;
+    font-family: var(--fontepadrao);
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+main strong{
+    color: #056baa;
+    font-weight: bold;
+    
+}
+
+
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #056baa;
+    background-color: var(--cor2);
+}
+
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+    background-color: var(--cor5);
+}
+
+
+main  h1{
+    color: var(--cor5);
+    font-family: var(--fontelinux);
+    font-size: 2em;
+    font-weight: normal;
+}
+
+
+
+main h2{
+    font-family: var(--fontelinux);
+    color: var(--cor4);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.linux{
+    max-width: 615px;
+}
+
+main img.peq{
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+main img.med{
+    width: 90%;
+}
+
+a.ext::after{
+    content: '\00A0\1F517';
+
+}
+
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+
+header > h1{
+    color: white;
+    font-family: var(--fontedestaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.219);
+    font-weight: normal;
+}
+
+
+
+header > p {
+    color: white;
+    font-family: var(--fontedestaque);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.13);
+    font-weight: normal;
+
+}
+
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.308);
+}
+
+
+nav>a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+
+nav > a:hover{
+    background-color: var(--cor5);
+    color: var(--cor3);
+}
+
+div.vid{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 58%;
+    
+}
+
+
+div.vid > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+
+aside{
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.295);
+}
+
+aside > h3{
+    background-color: var(--cor5);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+
+
+
+
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "\2714\00A0\00A0";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    font-family: var(--fontedestaque);
+    text-align: center;
+    padding: 5px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+
+
+
